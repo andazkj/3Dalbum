@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>3D 相册旋转</title>
+</head>
+<style>
+  *{
+    padding:0px;
+    margin:0px;
+  }
+  html,body{
+    height:100%;
+
+  }
+  body{
+    background:url(./img/bg.jpg) no-repeat center center;
+  }
+  .wrap{
+    position: fixed;
+    width: 280px;
+    height: 400px;
+    left:0px;
+    top: 0px;
+    bottom:0px;
+    right:0px;
+    margin:auto;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(0deg);
+    animation: Imgrotate 23s linear;
+    animation-iteration-count: infinite;
+    background:url(./img/20.jpg) no-repeat center center;
+  }
+  .wrap:hover{
+    animation-play-state: paused;
+  }
+  .wrap img{
+    width: 280px;
+    height: 400px;
+    overflow: hidden;
+    position: absolute;
+    left:0px;
+    top:0px;
+
+
+
+  }
+  .wrap .imgs:nth-child(1){
+    transform: rotateY(0deg) translateZ(600px);
+
+  }
+  .wrap .imgs:nth-child(2){
+    transform: rotateY(36deg) translateZ(600px);
+  }
+  .wrap .imgs:nth-child(3){
+    transform: rotateY(72deg) translateZ(600px);
+  }
+  .wrap .imgs:nth-child(4){
+    transform: rotateY(108deg) translateZ(600px);
+  }
+  .wrap .imgs:nth-child(5){
+    transform: rotateY(144deg) translateZ(600px);
+  }
+  .wrap .imgs:nth-child(6){
+    transform: rotateY(180deg) translateZ(600px);
+  }
+  .wrap .imgs:nth-child(7){
+    transform: rotateY(216deg) translateZ(600px);
+  }
+  .wrap .imgs:nth-child(8){
+    transform: rotateY(252deg) translateZ(600px);
+  }
+  .wrap .imgs:nth-child(9){
+    transform: rotateY(288deg) translateZ(600px);
+  }
+  .wrap .imgs:nth-child(10){
+    transform: rotateY(324deg) translateZ(600px);
+  }
+  @keyframes Imgrotate{
+    0%{transform: rotateX(0deg) rotateY(0deg);}
+    20%{transform:rotateX(15deg) rotateY(144deg);}
+    40%{transform:rotateX(0deg) rotateY(288deg);}
+    60%{transform:rotateX(-15deg) rotateY(432deg);}
+    80%{transform:rotateX(0deg) rotateY(576deg);}
+    100%{transform:rotateX(0deg) rotateY(720deg);}
+  }
+
+
+
+</style>
+<body>
+
+    <div class="wrap">
+      <img class="imgs" src="./img/1.jpg" alt="">
+      <img class="imgs" src="./img/2.jpg" alt="">
+      <img class="imgs" src="./img/3.jpg" alt="">
+      <img class="imgs" src="./img/4.jpg" alt="">
+      <img class="imgs" src="./img/5.jpg" alt="">
+      <img class="imgs" src="./img/6.jpg" alt="">
+      <img class="imgs" src="./img/7.jpg" alt="">
+      <img class="imgs" src="./img/8.jpg" alt="">
+      <img class="imgs" src="./img/9.jpg" alt="">
+      <img class="imgs" src="./img/10.jpg" alt="">
+    </div>
+
+</body>
+</html>
