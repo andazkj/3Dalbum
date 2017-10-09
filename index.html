@@ -16,12 +16,13 @@
 
   }
   body{
-    background:url(./img/bg.jpg) no-repeat center center;
+    background:url(./img/bg.jpg) no-repeat ;
+    background-size: 100% 100%;
   }
   .wrap{
     position: fixed;
-    width: 280px;
-    height: 400px;
+    width: 100px;
+    height: 200px;
     left:0px;
     top: 0px;
     bottom:0px;
@@ -32,14 +33,15 @@
     transform: rotateX(0deg) rotateY(0deg);
     animation: Imgrotate 23s linear;
     animation-iteration-count: infinite;
-    background:url(./img/20.jpg) no-repeat center center;
+    background:url(./img/20.jpg) no-repeat ;
+    background-size:100% 100%;
   }
   .wrap:hover{
     animation-play-state: paused;
   }
   .wrap img{
-    width: 280px;
-    height: 400px;
+    width: 100px;
+    height: 200px;
     overflow: hidden;
     position: absolute;
     left:0px;
@@ -49,42 +51,42 @@
 
   }
   .wrap .imgs:nth-child(1){
-    transform: rotateY(0deg) translateZ(600px);
+    transform: rotateY(0deg) translateZ(180px);
 
   }
   .wrap .imgs:nth-child(2){
-    transform: rotateY(36deg) translateZ(600px);
+    transform: rotateY(36deg) translateZ(180px);
   }
   .wrap .imgs:nth-child(3){
-    transform: rotateY(72deg) translateZ(600px);
+    transform: rotateY(72deg) translateZ(180px);
   }
   .wrap .imgs:nth-child(4){
-    transform: rotateY(108deg) translateZ(600px);
+    transform: rotateY(108deg) translateZ(180px);
   }
   .wrap .imgs:nth-child(5){
-    transform: rotateY(144deg) translateZ(600px);
+    transform: rotateY(144deg) translateZ(180px);
   }
   .wrap .imgs:nth-child(6){
-    transform: rotateY(180deg) translateZ(600px);
+    transform: rotateY(180deg) translateZ(180px);
   }
   .wrap .imgs:nth-child(7){
-    transform: rotateY(216deg) translateZ(600px);
+    transform: rotateY(216deg) translateZ(180px);
   }
   .wrap .imgs:nth-child(8){
-    transform: rotateY(252deg) translateZ(600px);
+    transform: rotateY(252deg) translateZ(180px);
   }
   .wrap .imgs:nth-child(9){
-    transform: rotateY(288deg) translateZ(600px);
+    transform: rotateY(288deg) translateZ(180px);
   }
   .wrap .imgs:nth-child(10){
-    transform: rotateY(324deg) translateZ(600px);
+    transform: rotateY(324deg) translateZ(180px);
   }
   @keyframes Imgrotate{
     0%{transform: rotateX(0deg) rotateY(0deg);}
     20%{transform:rotateX(15deg) rotateY(144deg);}
-    40%{transform:rotateX(0deg) rotateY(288deg);}
-    60%{transform:rotateX(-15deg) rotateY(432deg);}
-    80%{transform:rotateX(0deg) rotateY(576deg);}
+    40%{transform:rotateX(5deg) rotateY(288deg);}
+    60%{transform:rotateX(-5deg) rotateY(432deg);}
+    80%{transform:rotateX(-15deg) rotateY(576deg);}
     100%{transform:rotateX(0deg) rotateY(720deg);}
   }
 
@@ -105,6 +107,8 @@
       <img class="imgs" src="./img/9.jpg" alt="">
       <img class="imgs" src="./img/10.jpg" alt="">
     </div>
+    <audio src="./bg.mp3" hidden="hidden" loop="-1" autoplay>
 
+    </audio>
 </body>
 </html>
